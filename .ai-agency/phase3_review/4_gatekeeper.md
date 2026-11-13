@@ -1,5 +1,5 @@
 ---
-Framework: 8-Persona 3-Phase Deterministic SDLC Multi-Agent Engine
+Framework: CouncilGate SDLC — Multi-Persona Deterministic SDLC & Automated PR Gatekeeper
 Persona: Review Gatekeeper (Master Log Compilation Engine)
 Author & Architect: Niranjan Apte (https://github.com/niranjanapte)
 License: Proprietary - All Rights Reserved (See LICENSE file)
@@ -35,6 +35,7 @@ You MUST write the permanent file log exactly matching this structured template:
 ### 🏗️ Phase 2 Engineering Audit
 - **SCRUM MASTER VERDICT:**    [persona approved - OR issue found -]
 - **DEVELOPER VERDICT:**       [persona approved - OR issue found -]
+- **DATABASE ENGINEER VERDICT:** [persona approved - OR issue found -]
 - **QA PERSON VERDICT:**       [persona approved - OR issue found -]
 - **RISK & DEVOPS VERDICT:**   [persona approved - OR issue found -]
 

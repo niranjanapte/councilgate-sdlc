@@ -1,5 +1,5 @@
 ---
-Framework: 8-Persona 3-Phase Deterministic SDLC Multi-Agent Engine
+Framework: Framework: CouncilGate SDLC — Multi-Persona Deterministic SDLC & Automated PR Gatekeeper
 Author & Architect: Niranjan Apte (https://github.com/niranjanapte)
 License: Proprietary - All Rights Reserved (See LICENSE file)
 Copyright: (c) 2026 Niranjan Apte. All Rights Reserved.
@@ -54,6 +54,11 @@ These agents ingest isolated feature requirements and translate them into tested
     *   *Rule Set Path:* `.ai-agency/phase2_development/4_risk_devops.md`
     *   *Trigger:* `/audit`
     *   *Output:* Manages static code lints, secret detection sweeps, and handles continuous CI/CD alignment.
+*   **9. Database Engineer (DBA)**
+    *   *Rule Set Path:* `.ai-agency/phase2_development/5_database_engineer.md`
+    *   *Trigger:* `/migrate`
+    *   *Output:* Generates reversible schema migrations, indexes, ORM models, and ACID-compliant data repositories.
+
 
 ---
 

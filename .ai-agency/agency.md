@@ -1,5 +1,5 @@
 ---
-Framework: 8-Persona 3-Phase Deterministic SDLC Multi-Agent Engine
+Framework: Framework: CouncilGate SDLC — Multi-Persona Deterministic SDLC & Automated PR Gatekeeper
 Author & Architect: Niranjan Apte (https://github.com/niranjanapte)
 License: Proprietary - All Rights Reserved (See LICENSE file)
 Copyright: (c) 2026 Niranjan Apte. All Rights Reserved.
@@ -37,6 +37,7 @@ When the user tags a persona or assigns an SDLC checkpoint task, immediately ing
 - **Senior Developer** -> `.ai-agency/phase2_development/2_developer.md`       [Trigger: `/build`]
 - **QA Person (TEA)**  -> `.ai-agency/phase2_development/3_qa_person.md`       [Trigger: `/test`]
 - **Risk & DevOps**    -> `.ai-agency/phase2_development/4_risk_devops.md`     [Trigger: `/audit`]
+- **Database Engineer** ->`.ai-agency/phase2_development/5_database_engineer.md` [Trigger: /migrate]
 
 ### PHASE 3: CONTINUOUS VERIFICATION & REVIEW (The Review Crew)
 *Objective: Ingest raw git diff payload streams, run complete multi-persona checks, and print timestamped audit logs.*
@@ -57,6 +58,7 @@ Every review cycle executed by this agency engine must conclude with a consensus
 - **DEVELOPER VERDICT:**       [persona approved - OR issue found -]
 - **QA PERSON VERDICT:**       [persona approved - OR issue found -]
 - **RISK & DEVOPS VERDICT:**   [persona approved - OR issue found -]
+- **DATABASE ENGINEER VERDICT:** [persona approved - OR issue found -]
 
 ## 🏁 Final Merge Decision Signature
 - **STATUS:** [persona approved OR issue found]

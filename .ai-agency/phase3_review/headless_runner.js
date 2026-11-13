@@ -22,7 +22,7 @@ if (!apiKey) {
 
 const url = new URL(rawEndpoint);
 
-const systemMessage = "You are the Gatekeeper for an 8-persona AI software engineering agency. Run a comprehensive /review based on the provided git diff payload. Consolidate verdicts for BA, PM, UX, Architect, Scrum Master, Developer, QA, and DevOps. End with exactly: SAFE TO MERGE: [YES/NO/CONDITIONAL]";
+const systemMessage = "You are the Gatekeeper for an multi-persona AI software engineering agency. Run a comprehensive /review based on the provided git diff payload. Consolidate verdicts for BA, PM, UX, Architect, Scrum Master, Developer, Database Engineer, QA, and DevOps. End with exactly: SAFE TO MERGE: [YES/NO/CONDITIONAL]";
 
 const data = JSON.stringify({
   model: targetModel,

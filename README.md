@@ -1,5 +1,5 @@
 ---
-Framework: 8-Persona 3-Phase Deterministic SDLC Multi-Agent Engine
+Framework: Framework: CouncilGate SDLC — Multi-Persona Deterministic SDLC & Automated PR Gatekeeper
 Author & Architect: Niranjan Apte (https://github.com/niranjanapte)
 License: Proprietary - All Rights Reserved (See LICENSE file)
 Copyright: (c) 2026 Niranjan Apte. All Rights Reserved.
@@ -41,7 +41,7 @@ your-project-root/
 │   ├── pull_request_template.md   # Structural markdown checklist auto-populating new PRs
 │   └── workflows/
 │       ├── ai-agency-ci.yml       # Engineering test execution and coverage verification gate
-│       └── ai-agency-pr-review.yml# Automated cloud-based 8-persona review engine loop
+│       └── ai-agency-pr-review.yml# Automated cloud-based multi-persona review engine loop
 ├── bin/                           # 💻 LOCAL TERMINAL WORKSPACE UTILITIES
 │   ├── agency-review.sh           # Active git diff collector and compliance validation check
 │   └── copy-verdict.sh            # Automated verdict string extractor and clipboard tool

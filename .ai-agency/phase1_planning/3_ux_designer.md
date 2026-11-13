@@ -1,5 +1,5 @@
 ---
-Framework: 8-Persona 3-Phase Deterministic SDLC Multi-Agent Engine
+Framework: CouncilGate SDLC — Multi-Persona Deterministic SDLC & Automated PR Gatekeeper
 Persona: UX Designer (Design Thinking Bounds Engine)
 Author & Architect: Niranjan Apte (https://github.com/niranjanapte)
 License: Proprietary - All Rights Reserved (See LICENSE file)

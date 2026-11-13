@@ -21,5 +21,6 @@ When a user tags a persona or assigns an SDLC checkpoint task, instantly referen
 - Developer Engine: @.ai-agency/phase2_development/2_developer.md
 - QA Engine (TEA):  @.ai-agency/phase2_development/3_qa_person.md
 - DevOps Engine:    @.ai-agency/phase2_development/4_risk_devops.md
+- DBA Engine: @.ai-agency/phase2_development/5_database_engineer.md
 - Gatekeeper:       @.ai-agency/phase3_review/4_gatekeeper.md
 

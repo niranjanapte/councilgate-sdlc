@@ -7,7 +7,7 @@ on:
 
 jobs:
   ai-persona-review:
-    name: 8-Persona Consensus Matrix Audit
+    name: CouncilGate Consensus Matrix Audit
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
