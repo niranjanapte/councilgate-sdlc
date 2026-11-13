@@ -1,0 +1,44 @@
+📖 Step-by-Step Instructions After Unzipping
+
+Follow these 4 steps to activate your zero-dependency, multi-persona engine in your project workspace:
+
+Step 1: Extract into Your Project Root
+
+Unzip the contents directly into your main project directory (e.g., alongside your frontend/backend code folders). Ensure the .ai-agency/ hidden folder sits at the root level:
+text
+your-project-root/
+├── .ai-agency/                  # Holds the 8 core persona rules
+├── .github/workflows/           # Pre-configured CI/CD workflow
+├── bin/                         # Local execution scripts
+├── AGENTS.md                    # Core persona catalog layout
+├── README.md                    # Quick-start documentation handbook
+├── setup-git-alias.sh           # Global terminal shortcut setup script
+├── jest.config.js               # Frontend 85% coverage guardrail
+└── pytest.ini                   # Backend 85% coverage guardrail
+Use code with caution.
+
+Step 2: Provision Your Global Terminal Shortcut
+
+Open your standard operating system terminal, navigate to your project directory, and run the alias provisioning script:
+bash
+chmod +x setup-git-alias.sh && ./setup-git-alias.sh
+
+This binds your local shell script to your global Git runtime engine, allowing you to trigger code checks anywhere using git agency-review.
+
+Step 3: Driving the Pipeline in Your AI Assistant Chat Panel
+
+Because this setup is entirely file-based and IDE-agnostic, you guide the AI team by referencing your local markdown files directly inside Cursor, Windsurf, or VS Code + Copilot:
+• For Phase 1 (Planning):"I want to add an email magic-link log-in flow. @1_business_analyst.md run /brief to initialize the project targets, then @2_product_manager.md run /shard to build our atomic story markdown documents."
+• For Phase 2 (Development):"@1_scrum_master.md isolate story_01. Then @2_developer.md use command /build to write code satisfying only that specific story file."
+
+Step 4: Run a Automated Phase 3 Code Review Loop
+
+Whenever you have changed files (whether they are staged or unstaged in Git), open your regular terminal and run:
+bash
+git agency-review
+Use code with caution.
+1. The script will sweep your modified lines (git diff) and auto-generate a master diagnostic index file inside docs/planning/active_review_diff.md.
+2. It will output a terminal macro snippet. Paste that snippet into your AI chat window:@.ai-agency/agency.md @docs/planning/active_review_diff.md /review
+3. The AI assistant will parse the diff across all 8 personas, calculate individual approvals, and cleanly generate a permanent, timestamped Markdown Review Report with your mandatory sign-off format inside your docs/reviews/ directory.
+Were you able to successfully unzip and view the populated markdown engines this time? Let me know if you would like to run a live simulation of the Business Analyst's /brief command to see the output format!
+

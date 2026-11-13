@@ -1,0 +1,59 @@
+name: 🤖 AI Agency Enterprise Gatekeeper Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [ main, master, develop ]
+
+jobs:
+  ai-persona-review:
+    name: 8-Persona Consensus Matrix Audit
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+    
+    steps:
+      - name: Checkout Code Base
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Extract Git PR Payload Diff
+        run: |
+          git diff origin/${{ github.base_ref }}...HEAD > pr_diff.txt
+          echo "DIFF_SIZE=$(wc -l < pr_diff.txt)" >> $GITHUB_ENV
+
+      - name: Orchestrate AI Multi-Persona Review Engine
+        if: env.DIFF_SIZE > 0
+        id: run_review
+        env:
+          GENAI_API_KEY: ${{ secrets.GENAI_API_KEY }}
+          GENAI_API_ENDPOINT: ${{ secrets.GENAI_API_ENDPOINT }}
+          GENAI_TARGET_MODEL: ${{ secrets.GENAI_TARGET_MODEL }}
+        run: |
+          node .ai-agency/phase3_review/headless_runner.js pr_diff.txt > docs/reviews/active_pr_report.md
+          
+          if grep -q "SAFE TO MERGE: NO" docs/reviews/active_pr_report.md; then
+            echo "VERDICT=FAILED" >> $GITHUB_ENV
+          else
+            echo "VERDICT=PASSED" >> $GITHUB_ENV
+          fi
+
+      - name: Post Master Audit Log Comment to PR
+        uses: marooned/post-comment-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          body_file: docs/reviews/active_pr_report.md
+
+      - name: Enforce Branch Safety Policy
+        if: env.VERDICT == 'FAILED'
+        run: |
+          echo "❌ Critical blockers flagged by the multi-agent code evaluation review. Blocking pull request merge sequence."
+          exit 1
+
