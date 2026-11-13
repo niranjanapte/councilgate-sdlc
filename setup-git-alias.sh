@@ -1,26 +1,31 @@
 #!/bin/bash
 # ==============================================================================
-# 🛠️ UNIVERSAL AI AGENCY INTERFACE: CROSS-SHELL SHORTCUT PROVISIONING COUPLER
+# 🛠️ COUNCILGATE SDLC: CROSS-SHELL SHORTCUT PROVISIONING COUPLER
 # ==============================================================================
 
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 
-echo -e "${BLUE}⚙️ Configuring Universal Git Alias 'git agency-review'...${NC}"
+echo -e "${BLUE}⚙️ Configuring CouncilGate SDLC Global Git Aliases...${NC}"
 
-# 1. Compute and authorize the Phase 3 Code Review script path
-SCRIPT_PATH="$(pwd)/bin/agency-review.sh"
-chmod +x "$SCRIPT_PATH" 2>/dev/null
-git config --global alias.agency-review "!bash $SCRIPT_PATH"
+# 1. Register Phase 3 Code Review Shortcut
+REVIEW_SCRIPT="$(pwd)/bin/agency-review.sh"
+chmod +x "$REVIEW_SCRIPT" 2>/dev/null
+git config --global alias.agency-review "!bash \"$REVIEW_SCRIPT\""
 
-echo -e "${BLUE}⚙️ Configuring Universal Git Alias 'git copy-verdict'...${NC}"
+# 2. Register Automated Verdict Clipboard Shortcut
+COPY_SCRIPT="$(pwd)/bin/copy-verdict.sh"
+chmod +x "$COPY_SCRIPT" 2>/dev/null
+git config --global alias.copy-verdict "!bash \"$COPY_SCRIPT\""
 
-# 2. Compute and authorize the automated Verdict Clipboard script path
-COPY_SCRIPT_PATH="$(pwd)/bin/copy-verdict.sh"
-chmod +x "$COPY_SCRIPT_PATH" 2>/dev/null
-git config --global alias.copy-verdict "!bash $COPY_SCRIPT_PATH"
+# 3. Register Upstream Framework Updater Shortcut
+UPDATE_SCRIPT="$(pwd)/bin/update-councilgate.sh"
+chmod +x "$UPDATE_SCRIPT" 2>/dev/null
+git config --global alias.councilgate-update "!bash \"$UPDATE_SCRIPT\""
 
 echo -e "${GREEN}✅ Configuration Sequence Complete! Global proxy pipelines active.${NC}"
-echo -e "You can now execute '${BLUE}git agency-review${NC}' or '${BLUE}git copy-verdict${NC}' inside any repository workspace branch."
-
+echo -e "Available global commands across any repository:"
+echo -e "  • ${BLUE}git agency-review${NC}       (Compile diff & run multi-persona review)"
+echo -e "  • ${BLUE}git copy-verdict${NC}        (Copy latest Gatekeeper verdict to clipboard)"
+echo -e "  • ${BLUE}git councilgate-update${NC}  (Pull latest CouncilGate personas & scripts)"
