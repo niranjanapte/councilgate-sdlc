@@ -7,9 +7,9 @@ Copyright: (c) 2026 Niranjan Apte. All Rights Reserved.
 
 # 📖 CouncilGate SDLC: Multi-Persona Operational Playbook
 
-[![GitHub Release](https://shields.io)](https://github.com)
-[![License: Proprietary](https://shields.io)](./license.md)
-[![IDE Agnostic](https://shields.io)](#)
+[![GitHub Release](https://shields.iogithub/v/release/niranjanapte/councilgate-sdlc?style=for-the-badge&logo=github&color=2ea44f)](https://github.comniranjanapte/councilgate-sdlc/releases)
+[![License: Proprietary](https://shields.iobadge/License-Proprietary-red?style=for-the-badge)](./license.md)
+[![IDE Agnostic](https://shields.iobadge/IDE-Cursor%20%7C%20Windsurf%20%7C%20VS%20Code-blue?style=for-the-badge)](#)
 
 *Version: 1.0-Enterprise (IDE-Agnostic / Zero-Dependency)*
 
