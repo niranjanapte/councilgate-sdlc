@@ -6,6 +6,11 @@ Copyright: (c) 2026 Niranjan Apte. All Rights Reserved.
 ---
 
 # 📖 CouncilGate SDLC: Multi-Persona Operational Playbook
+
+[![GitHub Release](https://shields.io)](https://github.com)
+[![License: Proprietary](https://shields.io)](./license.md)
+[![IDE Agnostic](https://shields.io)](#)
+
 *Version: 1.0-Enterprise (IDE-Agnostic / Zero-Dependency)*
 
 Welcome to **CouncilGate SDLC**, a production-grade, multi-agent development ecosystem designed to turn modern AI assistants (Cursor, Windsurf, VS Code + Roo Code/Cline, GitHub Copilot) from single-prompt helpers into an aligned, deterministic software engineering team.
