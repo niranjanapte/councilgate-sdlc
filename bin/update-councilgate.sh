@@ -13,7 +13,7 @@ TEMP_DIR=$(mktemp -d)
 
 echo -e "${BLUE}🔄 Checking upstream CouncilGate SDLC repository for updates...${NC}"
 
-# 1. Clone the latest main branch quietly into a temporary folder
+# 1. Clone the latest master branch quietly into a temporary folder
 if ! git clone --depth 1 --quiet "$REPO_URL" "$TEMP_DIR"; then
     echo -e "${RED}❌ Error: Failed to reach upstream repository at ${REPO_URL}.${NC}"
     rm -rf "$TEMP_DIR"

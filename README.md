@@ -51,7 +51,7 @@ When new personas or guardrail improvements are released, teams can update their
 *   **If installed globally (`~/councilgate-sdlc`):**
     Navigate to your global framework folder and pull the latest release:
     ```bash
-    cd ~/councilgate-sdlc && git pull origin main
+    cd ~/councilgate-sdlc && git pull origin master
     ```
 *   **If copied directly into a project repository:**
     Run the built-in updater command from your project's root folder to refresh `.ai-agency/`, `bin/`, `AGENTS.md`, and `license.md`:
